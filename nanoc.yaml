@@ -89,9 +89,13 @@ checks:
     #   exclude_files: ['blog/page']
     exclude_files: []
 
+
 deploy:
   default:
-    kind: git
-    remote: git@github.com:saddacracker/saddacracker.bitbucket.org.git
-    branch: gh-pages
-    forced: true
+    kind:                  fog
+    provider:              aws
+    region:                us-west-2
+    bucket:                precision-sheet-metal
+    aws_access_key_id:     AKIAJAB2G67FOZPFVKIQ
+    aws_secret_access_key: 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
+    path_style:            false
