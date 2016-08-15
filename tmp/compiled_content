@@ -1,5 +1,5 @@
 {:	data{o:Nanoc::Identifier:
-@type:	full:@stringI"/index.html:ET{:default{	:	lastU:Nanoc::Int::TextualContent[0I"Æ<!DOCTYPE HTML>
+@type:	full:@stringI"/index.html:ET{:default{	:	lastU:Nanoc::Int::TextualContent[0I"|<!DOCTYPE HTML>
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -72,7 +72,13 @@
       <div class="callout location">
         <h2 class="callout__title">Location</h2>
         <div class="psm-map">
-          <script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script><div style='overflow:hidden;height:234px;width:320px;'><div id='gmap_canvas' style='height:234px;width:320px;'></div><div><small><a href="http://embedgooglemaps.com">Embed your Google Map here!</a></small></div><div><small><a href="https://binaireoptieservaringen.nl/">Lees hier ervaringen van diverse binaire opties aanbieders</a></small></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div><script type='text/javascript'>function init_map(){var myOptions = {zoom:14,center:new google.maps.LatLng(47.70662249999999,-122.34441520000001),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(47.70662249999999,-122.34441520000001)});infowindow = new google.maps.InfoWindow({content:'<strong>Precision Sheet Metal</strong><br>10554 Aurora Ave N, Seattle, WA<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
+          <!-- AIzaSyC352KZ8OeyBjeszPjujPqRhn9EttIalaI -->
+          <iframe
+                  width="320"
+                  height="235"
+                  frameborder="0" style="border:0"
+                  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyD0nxTCqX-9oLDn2Hn3SXMR-aqlUCg8Gy8&q=10554 Aurora Ave N, Seattle, WA" allowfullscreen>
+          </iframe>
         </div>
       </div>
     </div>
@@ -101,8 +107,7 @@
 </html>
 ;
 T:rawU;[I"F/Users/johncardwell/apps/precision-sheet-metal/content/index.html;
-TI"}
-
+TI"3
 <div class="jumbotron jumbotron--psm">
   <div class="container">
     <h1 class="jumbotron--psm__headline">Precision Custom Sheet Metal Since 2000</h1>
@@ -140,7 +145,13 @@ TI"}
       <div class="callout location">
         <h2 class="callout__title">Location</h2>
         <div class="psm-map">
-          <script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script><div style='overflow:hidden;height:234px;width:320px;'><div id='gmap_canvas' style='height:234px;width:320px;'></div><div><small><a href="http://embedgooglemaps.com">Embed your Google Map here!</a></small></div><div><small><a href="https://binaireoptieservaringen.nl/">Lees hier ervaringen van diverse binaire opties aanbieders</a></small></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div><script type='text/javascript'>function init_map(){var myOptions = {zoom:14,center:new google.maps.LatLng(47.70662249999999,-122.34441520000001),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(47.70662249999999,-122.34441520000001)});infowindow = new google.maps.InfoWindow({content:'<strong>Precision Sheet Metal</strong><br>10554 Aurora Ave N, Seattle, WA<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
+          <!-- AIzaSyC352KZ8OeyBjeszPjujPqRhn9EttIalaI -->
+          <iframe
+                  width="320"
+                  height="235"
+                  frameborder="0" style="border:0"
+                  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyD0nxTCqX-9oLDn2Hn3SXMR-aqlUCg8Gy8&q=10554 Aurora Ave N, Seattle, WA" allowfullscreen>
+          </iframe>
         </div>
       </div>
     </div>

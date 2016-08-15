@@ -1,8 +1,29 @@
-Crashlog created at 2016-08-14 22:43:26 -0700
+Crashlog created at 2016-08-14 23:51:47 -0700
 
 ===== MESSAGE:
 
-RuntimeError: Branch 'gh-pages' does not exist inside output. Please create one and try again.
+Excon::Error::Forbidden: Expected(200) <=> Actual(403 Forbidden)
+excon.error.response
+  :body          => "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<Error><Code>AccessDenied</Code><Message>Access Denied</Message><RequestId>D11A500BECB62B5E</RequestId><HostId>OlyNd2QVgXC6IZzLLxw5AICZH8MSlvPdyBnqFYibVN9v1+eY9os94mHmaO7CLu2d1Rk3ueiOZsQ=</HostId></Error>"
+  :cookies       => [
+  ]
+  :headers       => {
+    "Content-Type"        => "application/xml"
+    "Date"                => "Mon, 15 Aug 2016 06:51:47 GMT"
+    "Server"              => "AmazonS3"
+    "x-amz-bucket-region" => "us-west-2"
+    "x-amz-id-2"          => "OlyNd2QVgXC6IZzLLxw5AICZH8MSlvPdyBnqFYibVN9v1+eY9os94mHmaO7CLu2d1Rk3ueiOZsQ="
+    "x-amz-request-id"    => "D11A500BECB62B5E"
+  }
+  :host          => "precision-sheet-metal.s3-us-west-2.amazonaws.com"
+  :local_address => "172.16.60.126"
+  :local_port    => 61313
+  :path          => "/"
+  :port          => 443
+  :reason_phrase => "Forbidden"
+  :remote_ip     => "54.231.168.189"
+  :status        => 403
+  :status_line   => "HTTP/1.1 403 Forbidden\r\n"
 
 ===== COMPILATION STACK:
 
@@ -10,28 +31,51 @@ RuntimeError: Branch 'gh-pages' does not exist inside output. Please create one 
 
 ===== STACK TRACE:
 
-  0. /Users/johncardwell/.rvm/gems/ruby-2.3.1/gems/nanoc-git-1.0.1/lib/nanoc/git/deployer.rb:52:in `rescue in block in run'
-  1. /Users/johncardwell/.rvm/gems/ruby-2.3.1/gems/nanoc-git-1.0.1/lib/nanoc/git/deployer.rb:49:in `block in run'
-  2. /Users/johncardwell/.rvm/gems/ruby-2.3.1/gems/nanoc-git-1.0.1/lib/nanoc/git/deployer.rb:30:in `chdir'
-  3. /Users/johncardwell/.rvm/gems/ruby-2.3.1/gems/nanoc-git-1.0.1/lib/nanoc/git/deployer.rb:30:in `run'
-  4. /Users/johncardwell/.rvm/gems/ruby-2.3.1/gems/nanoc-4.2.4/lib/nanoc/cli/commands/deploy.rb:55:in `deploy'
-  5. /Users/johncardwell/.rvm/gems/ruby-2.3.1/gems/nanoc-4.2.4/lib/nanoc/cli/commands/deploy.rb:23:in `run'
-  6. /Users/johncardwell/.rvm/gems/ruby-2.3.1/gems/nanoc-4.2.4/lib/nanoc/cli/command_runner.rb:12:in `block in call'
-  7. /Users/johncardwell/.rvm/gems/ruby-2.3.1/gems/nanoc-4.2.4/lib/nanoc/cli/error_handler.rb:64:in `handle_while'
-  8. /Users/johncardwell/.rvm/gems/ruby-2.3.1/gems/nanoc-4.2.4/lib/nanoc/cli/error_handler.rb:22:in `handle_while'
-  9. /Users/johncardwell/.rvm/gems/ruby-2.3.1/gems/nanoc-4.2.4/lib/nanoc/cli/command_runner.rb:11:in `call'
-  10. /Users/johncardwell/.rvm/gems/ruby-2.3.1/gems/cri-2.7.0/lib/cri/command_dsl.rb:233:in `block in runner'
-  11. /Users/johncardwell/.rvm/gems/ruby-2.3.1/gems/cri-2.7.0/lib/cri/command.rb:294:in `run_this'
-  12. /Users/johncardwell/.rvm/gems/ruby-2.3.1/gems/cri-2.7.0/lib/cri/command.rb:247:in `run'
-  13. /Users/johncardwell/.rvm/gems/ruby-2.3.1/gems/cri-2.7.0/lib/cri/command.rb:260:in `run'
-  14. /Users/johncardwell/.rvm/gems/ruby-2.3.1/gems/nanoc-4.2.4/lib/nanoc/cli.rb:46:in `block in run'
-  15. /Users/johncardwell/.rvm/gems/ruby-2.3.1/gems/nanoc-4.2.4/lib/nanoc/cli/error_handler.rb:64:in `handle_while'
-  16. /Users/johncardwell/.rvm/gems/ruby-2.3.1/gems/nanoc-4.2.4/lib/nanoc/cli/error_handler.rb:22:in `handle_while'
-  17. /Users/johncardwell/.rvm/gems/ruby-2.3.1/gems/nanoc-4.2.4/lib/nanoc/cli.rb:44:in `run'
-  18. /Users/johncardwell/.rvm/gems/ruby-2.3.1/gems/nanoc-4.2.4/bin/nanoc:9:in `<top (required)>'
-  19. /Users/johncardwell/.rvm/gems/ruby-2.3.1/bin/nanoc:23:in `load'
-  20. /Users/johncardwell/.rvm/gems/ruby-2.3.1/bin/nanoc:23:in `<main>'
-  21. /Users/johncardwell/.rvm/gems/ruby-2.3.1/bin/ruby_executable_hooks:15:in `eval'
+  0. /Users/johncardwell/.rvm/gems/ruby-2.3.1/gems/excon-0.51.0/lib/excon/middlewares/expects.rb:6:in `response_call'
+  1. /Users/johncardwell/.rvm/gems/ruby-2.3.1/gems/excon-0.51.0/lib/excon/middlewares/response_parser.rb:8:in `response_call'
+  2. /Users/johncardwell/.rvm/gems/ruby-2.3.1/gems/excon-0.51.0/lib/excon/connection.rb:389:in `response'
+  3. /Users/johncardwell/.rvm/gems/ruby-2.3.1/gems/excon-0.51.0/lib/excon/connection.rb:253:in `request'
+  4. /Users/johncardwell/.rvm/gems/ruby-2.3.1/gems/excon-0.51.0/lib/excon/middlewares/idempotent.rb:26:in `error_call'
+  5. /Users/johncardwell/.rvm/gems/ruby-2.3.1/gems/excon-0.51.0/lib/excon/middlewares/base.rb:10:in `error_call'
+  6. /Users/johncardwell/.rvm/gems/ruby-2.3.1/gems/excon-0.51.0/lib/excon/middlewares/base.rb:10:in `error_call'
+  7. /Users/johncardwell/.rvm/gems/ruby-2.3.1/gems/excon-0.51.0/lib/excon/connection.rb:273:in `rescue in request'
+  8. /Users/johncardwell/.rvm/gems/ruby-2.3.1/gems/excon-0.51.0/lib/excon/connection.rb:221:in `request'
+  9. /Users/johncardwell/.rvm/gems/ruby-2.3.1/gems/excon-0.51.0/lib/excon/middlewares/idempotent.rb:26:in `error_call'
+  10. /Users/johncardwell/.rvm/gems/ruby-2.3.1/gems/excon-0.51.0/lib/excon/middlewares/base.rb:10:in `error_call'
+  11. /Users/johncardwell/.rvm/gems/ruby-2.3.1/gems/excon-0.51.0/lib/excon/middlewares/base.rb:10:in `error_call'
+  12. /Users/johncardwell/.rvm/gems/ruby-2.3.1/gems/excon-0.51.0/lib/excon/connection.rb:273:in `rescue in request'
+  13. /Users/johncardwell/.rvm/gems/ruby-2.3.1/gems/excon-0.51.0/lib/excon/connection.rb:221:in `request'
+  14. /Users/johncardwell/.rvm/gems/ruby-2.3.1/gems/excon-0.51.0/lib/excon/middlewares/idempotent.rb:26:in `error_call'
+  15. /Users/johncardwell/.rvm/gems/ruby-2.3.1/gems/excon-0.51.0/lib/excon/middlewares/base.rb:10:in `error_call'
+  16. /Users/johncardwell/.rvm/gems/ruby-2.3.1/gems/excon-0.51.0/lib/excon/middlewares/base.rb:10:in `error_call'
+  17. /Users/johncardwell/.rvm/gems/ruby-2.3.1/gems/excon-0.51.0/lib/excon/connection.rb:273:in `rescue in request'
+  18. /Users/johncardwell/.rvm/gems/ruby-2.3.1/gems/excon-0.51.0/lib/excon/connection.rb:221:in `request'
+  19. /Users/johncardwell/.rvm/gems/ruby-2.3.1/gems/fog-xml-0.1.2/lib/fog/xml/sax_parser_connection.rb:35:in `request'
+  20. /Users/johncardwell/.rvm/gems/ruby-2.3.1/gems/fog-xml-0.1.2/lib/fog/xml/connection.rb:7:in `request'
+  21. /Users/johncardwell/.rvm/gems/ruby-2.3.1/gems/fog-aws-0.11.0/lib/fog/aws/storage.rb:611:in `_request'
+  22. /Users/johncardwell/.rvm/gems/ruby-2.3.1/gems/fog-aws-0.11.0/lib/fog/aws/storage.rb:606:in `request'
+  23. /Users/johncardwell/.rvm/gems/ruby-2.3.1/gems/fog-aws-0.11.0/lib/fog/aws/requests/storage/get_bucket.rb:43:in `get_bucket'
+  24. /Users/johncardwell/.rvm/gems/ruby-2.3.1/gems/fog-aws-0.11.0/lib/fog/aws/models/storage/directories.rb:21:in `get'
+  25. /Users/johncardwell/.rvm/gems/ruby-2.3.1/gems/nanoc-4.2.4/lib/nanoc/extra/deployers/fog.rb:128:in `get_or_create_bucket'
+  26. /Users/johncardwell/.rvm/gems/ruby-2.3.1/gems/nanoc-4.2.4/lib/nanoc/extra/deployers/fog.rb:91:in `run'
+  27. /Users/johncardwell/.rvm/gems/ruby-2.3.1/gems/nanoc-4.2.4/lib/nanoc/cli/commands/deploy.rb:55:in `deploy'
+  28. /Users/johncardwell/.rvm/gems/ruby-2.3.1/gems/nanoc-4.2.4/lib/nanoc/cli/commands/deploy.rb:23:in `run'
+  29. /Users/johncardwell/.rvm/gems/ruby-2.3.1/gems/nanoc-4.2.4/lib/nanoc/cli/command_runner.rb:12:in `block in call'
+  30. /Users/johncardwell/.rvm/gems/ruby-2.3.1/gems/nanoc-4.2.4/lib/nanoc/cli/error_handler.rb:64:in `handle_while'
+  31. /Users/johncardwell/.rvm/gems/ruby-2.3.1/gems/nanoc-4.2.4/lib/nanoc/cli/error_handler.rb:22:in `handle_while'
+  32. /Users/johncardwell/.rvm/gems/ruby-2.3.1/gems/nanoc-4.2.4/lib/nanoc/cli/command_runner.rb:11:in `call'
+  33. /Users/johncardwell/.rvm/gems/ruby-2.3.1/gems/cri-2.7.0/lib/cri/command_dsl.rb:233:in `block in runner'
+  34. /Users/johncardwell/.rvm/gems/ruby-2.3.1/gems/cri-2.7.0/lib/cri/command.rb:294:in `run_this'
+  35. /Users/johncardwell/.rvm/gems/ruby-2.3.1/gems/cri-2.7.0/lib/cri/command.rb:247:in `run'
+  36. /Users/johncardwell/.rvm/gems/ruby-2.3.1/gems/cri-2.7.0/lib/cri/command.rb:260:in `run'
+  37. /Users/johncardwell/.rvm/gems/ruby-2.3.1/gems/nanoc-4.2.4/lib/nanoc/cli.rb:46:in `block in run'
+  38. /Users/johncardwell/.rvm/gems/ruby-2.3.1/gems/nanoc-4.2.4/lib/nanoc/cli/error_handler.rb:64:in `handle_while'
+  39. /Users/johncardwell/.rvm/gems/ruby-2.3.1/gems/nanoc-4.2.4/lib/nanoc/cli/error_handler.rb:22:in `handle_while'
+  40. /Users/johncardwell/.rvm/gems/ruby-2.3.1/gems/nanoc-4.2.4/lib/nanoc/cli.rb:44:in `run'
+  41. /Users/johncardwell/.rvm/gems/ruby-2.3.1/gems/nanoc-4.2.4/bin/nanoc:9:in `<top (required)>'
+  42. /Users/johncardwell/.rvm/gems/ruby-2.3.1/bin/nanoc:23:in `load'
+  43. /Users/johncardwell/.rvm/gems/ruby-2.3.1/bin/nanoc:23:in `<main>'
+  44. /Users/johncardwell/.rvm/gems/ruby-2.3.1/bin/ruby_executable_hooks:15:in `eval'
 
 ===== VERSION INFORMATION:
 
@@ -44,32 +88,76 @@ Darwin 04012015-MBP.local 14.5.0 Darwin Kernel Version 14.5.0: Wed Jul 29 02:26:
 
 ===== INSTALLED GEMS:
 
+  CFPropertyList 2.3.2
   adsf 1.2.1
   bigdecimal 1.2.8
+  builder 3.2.2
   bundler 1.12.5
   bundler-unload 1.0.2
   colored 1.2
   concurrent-ruby 1.0.2
   cri 2.7.0
   did_you_mean 1.0.0
+  excon 0.51.0
   executable-hooks 1.3.2
+  fission 0.5.0
+  fog 1.38.0
+  fog-aliyun 0.1.0
+  fog-atmos 0.1.0
+  fog-aws 0.11.0
+  fog-brightbox 0.11.0
+  fog-cloudatcost 0.1.2
+  fog-core 1.42.0
+  fog-dynect 0.0.3
+  fog-ecloud 0.3.0
+  fog-google 0.1.0
+  fog-json 1.0.2
+  fog-local 0.3.0
+  fog-openstack 0.1.11
+  fog-powerdns 0.1.1
+  fog-profitbricks 0.0.5
+  fog-rackspace 0.1.1
+  fog-radosgw 0.0.5
+  fog-riakcs 0.1.0
+  fog-sakuracloud 1.7.5
+  fog-serverlove 0.1.2
+  fog-softlayer 1.1.3
+  fog-storm_on_demand 0.1.1
+  fog-terremark 0.1.0
+  fog-vmfusion 0.1.0
+  fog-voxel 0.1.0
+  fog-vsphere 1.0.0
+  fog-xenserver 0.2.3
+  fog-xml 0.1.2
+  formatador 0.2.5
   gem-wrappers 1.2.7
   hamster 3.0.0
+  inflecto 0.0.2
   io-console 0.4.5
+  ipaddress 0.8.3
   json 1.8.3
+  mime-types 3.1
+  mime-types-data 3.2016.0521
+  mini_portile2 2.1.0
   minitest 5.8.3
+  multi_json 1.12.1
   nanoc 4.2.4
   nanoc-git 1.0.1
   net-telnet 0.1.1
+  nokogiri 1.6.8
+  pkg-config 1.1.7
   power_assert 0.2.6
   psych 2.0.17
   rack 2.0.1
   rake 10.4.2
+  rbvmomi 1.8.2
   rdoc 4.2.1
   ref 2.0.0
   rubygems-bundler 1.4.4
   rvm 1.11.3.9
   test-unit 3.1.5
+  trollop 2.1.2
+  xml-simple 1.1.5
 
 ===== LOAD PATHS:
 
@@ -87,11 +175,56 @@ Darwin 04012015-MBP.local 14.5.0 Darwin Kernel Version 14.5.0: Wed Jul 29 02:26:
   11. /Users/johncardwell/.rvm/gems/ruby-2.3.1/gems/ref-2.0.0/lib
   12. /Users/johncardwell/.rvm/gems/ruby-2.3.1/gems/nanoc-4.2.4/lib
   13. /Users/johncardwell/.rvm/gems/ruby-2.3.1/gems/nanoc-git-1.0.1/lib
-  14. /Users/johncardwell/.rvm/rubies/ruby-2.3.1/lib/ruby/site_ruby/2.3.0
-  15. /Users/johncardwell/.rvm/rubies/ruby-2.3.1/lib/ruby/site_ruby/2.3.0/x86_64-darwin14
-  16. /Users/johncardwell/.rvm/rubies/ruby-2.3.1/lib/ruby/site_ruby
-  17. /Users/johncardwell/.rvm/rubies/ruby-2.3.1/lib/ruby/vendor_ruby/2.3.0
-  18. /Users/johncardwell/.rvm/rubies/ruby-2.3.1/lib/ruby/vendor_ruby/2.3.0/x86_64-darwin14
-  19. /Users/johncardwell/.rvm/rubies/ruby-2.3.1/lib/ruby/vendor_ruby
-  20. /Users/johncardwell/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0
-  21. /Users/johncardwell/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/x86_64-darwin14
+  14. /Users/johncardwell/.rvm/gems/ruby-2.3.1/gems/builder-3.2.2/lib
+  15. /Users/johncardwell/.rvm/gems/ruby-2.3.1/gems/excon-0.51.0/lib
+  16. /Users/johncardwell/.rvm/gems/ruby-2.3.1/gems/formatador-0.2.5/lib
+  17. /Users/johncardwell/.rvm/gems/ruby-2.3.1/gems/fog-core-1.42.0/lib
+  18. /Users/johncardwell/.rvm/gems/ruby-2.3.1/gems/multi_json-1.12.1/lib
+  19. /Users/johncardwell/.rvm/gems/ruby-2.3.1/gems/fog-json-1.0.2/lib
+  20. /Users/johncardwell/.rvm/gems/ruby-2.3.1/gems/mini_portile2-2.1.0/lib
+  21. /Users/johncardwell/.rvm/gems/ruby-2.3.1/gems/pkg-config-1.1.7/lib
+  22. /Users/johncardwell/.rvm/gems/ruby-2.3.1/gems/nokogiri-1.6.8/lib
+  23. /Users/johncardwell/.rvm/gems/ruby-2.3.1/extensions/x86_64-darwin-14/2.3.0/nokogiri-1.6.8
+  24. /Users/johncardwell/.rvm/gems/ruby-2.3.1/gems/fog-xml-0.1.2/lib
+  25. /Users/johncardwell/.rvm/gems/ruby-2.3.1/gems/ipaddress-0.8.3/lib
+  26. /Users/johncardwell/.rvm/gems/ruby-2.3.1/gems/xml-simple-1.1.5/lib
+  27. /Users/johncardwell/.rvm/gems/ruby-2.3.1/gems/fog-aliyun-0.1.0/lib
+  28. /Users/johncardwell/.rvm/gems/ruby-2.3.1/gems/fog-atmos-0.1.0/lib
+  29. /Users/johncardwell/.rvm/gems/ruby-2.3.1/gems/fog-aws-0.11.0/lib
+  30. /Users/johncardwell/.rvm/gems/ruby-2.3.1/gems/inflecto-0.0.2/lib
+  31. /Users/johncardwell/.rvm/gems/ruby-2.3.1/gems/fog-brightbox-0.11.0/lib
+  32. /Users/johncardwell/.rvm/gems/ruby-2.3.1/gems/fog-cloudatcost-0.1.2/lib
+  33. /Users/johncardwell/.rvm/gems/ruby-2.3.1/gems/fog-dynect-0.0.3/lib
+  34. /Users/johncardwell/.rvm/gems/ruby-2.3.1/gems/fog-ecloud-0.3.0/lib
+  35. /Users/johncardwell/.rvm/gems/ruby-2.3.1/gems/fog-google-0.1.0/lib
+  36. /Users/johncardwell/.rvm/gems/ruby-2.3.1/gems/fog-local-0.3.0/lib
+  37. /Users/johncardwell/.rvm/gems/ruby-2.3.1/gems/fog-openstack-0.1.11/lib
+  38. /Users/johncardwell/.rvm/gems/ruby-2.3.1/gems/fog-powerdns-0.1.1/lib
+  39. /Users/johncardwell/.rvm/gems/ruby-2.3.1/gems/fog-profitbricks-0.0.5/lib
+  40. /Users/johncardwell/.rvm/gems/ruby-2.3.1/gems/fog-rackspace-0.1.1/lib
+  41. /Users/johncardwell/.rvm/gems/ruby-2.3.1/gems/fog-radosgw-0.0.5/lib
+  42. /Users/johncardwell/.rvm/gems/ruby-2.3.1/gems/fog-riakcs-0.1.0/lib
+  43. /Users/johncardwell/.rvm/gems/ruby-2.3.1/gems/fog-sakuracloud-1.7.5/lib
+  44. /Users/johncardwell/.rvm/gems/ruby-2.3.1/gems/fog-serverlove-0.1.2/lib
+  45. /Users/johncardwell/.rvm/gems/ruby-2.3.1/gems/fog-softlayer-1.1.3/lib
+  46. /Users/johncardwell/.rvm/gems/ruby-2.3.1/gems/fog-storm_on_demand-0.1.1/lib
+  47. /Users/johncardwell/.rvm/gems/ruby-2.3.1/gems/fog-terremark-0.1.0/lib
+  48. /Users/johncardwell/.rvm/gems/ruby-2.3.1/gems/CFPropertyList-2.3.2/lib
+  49. /Users/johncardwell/.rvm/gems/ruby-2.3.1/gems/fission-0.5.0/lib
+  50. /Users/johncardwell/.rvm/gems/ruby-2.3.1/gems/fog-vmfusion-0.1.0/lib
+  51. /Users/johncardwell/.rvm/gems/ruby-2.3.1/gems/fog-voxel-0.1.0/lib
+  52. /Users/johncardwell/.rvm/gems/ruby-2.3.1/gems/trollop-2.1.2/lib
+  53. /Users/johncardwell/.rvm/gems/ruby-2.3.1/gems/rbvmomi-1.8.2/lib
+  54. /Users/johncardwell/.rvm/gems/ruby-2.3.1/gems/fog-vsphere-1.0.0/lib
+  55. /Users/johncardwell/.rvm/gems/ruby-2.3.1/gems/fog-xenserver-0.2.3/lib
+  56. /Users/johncardwell/.rvm/gems/ruby-2.3.1/gems/fog-1.38.0/lib
+  57. /Users/johncardwell/.rvm/gems/ruby-2.3.1/gems/mime-types-data-3.2016.0521/lib
+  58. /Users/johncardwell/.rvm/gems/ruby-2.3.1/gems/mime-types-3.1/lib
+  59. /Users/johncardwell/.rvm/rubies/ruby-2.3.1/lib/ruby/site_ruby/2.3.0
+  60. /Users/johncardwell/.rvm/rubies/ruby-2.3.1/lib/ruby/site_ruby/2.3.0/x86_64-darwin14
+  61. /Users/johncardwell/.rvm/rubies/ruby-2.3.1/lib/ruby/site_ruby
+  62. /Users/johncardwell/.rvm/rubies/ruby-2.3.1/lib/ruby/vendor_ruby/2.3.0
+  63. /Users/johncardwell/.rvm/rubies/ruby-2.3.1/lib/ruby/vendor_ruby/2.3.0/x86_64-darwin14
+  64. /Users/johncardwell/.rvm/rubies/ruby-2.3.1/lib/ruby/vendor_ruby
+  65. /Users/johncardwell/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0
+  66. /Users/johncardwell/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/x86_64-darwin14
