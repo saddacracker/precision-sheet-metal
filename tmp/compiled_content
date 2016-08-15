@@ -1,5 +1,5 @@
 {:	data{o:Nanoc::Identifier:
-@type:	full:@stringI"/index.html:ET{:default{	:	lastU:Nanoc::Int::TextualContent[0I"d	<!DOCTYPE HTML>
+@type:	full:@stringI"/index.html:ET{:default{	:	lastU:Nanoc::Int::TextualContent[0I"Æ<!DOCTYPE HTML>
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -14,52 +14,72 @@
     <nav class="navbar navbar-inverse navbar-static-top navbar--psm">
       <div class="container">
         <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#psmNavLinks">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
           <a class="navbar-brand" href="#"><img src="/images/psm-logo.gif" alt="Dispute Bills">
           </a>
+        </div>
+        <div id="psmNavLinks" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="nav-item">
+              <a class="btn btn-default navbar-btn" href="mailto:psmfseattle@gmail.com?subject=Inquiry From Your Website" target="_blank">Contact</a
+            </li>
+          </ul>
         </div>
       </div>
     </nav>
 
-    <img src="/images/psm-working.jpg" class="img-responsive" alt="Precision Sheet Metal Working">
-
-    <section>
-      <div id="main" class="container">
+    <section id="main">
         
-<div class="row">
-  <div class="col-md-12">
-    <h1>Precision Custom Sheet Metal Since 2000</h1>
+<div class="jumbotron jumbotron--psm">
+  <div class="container">
+    <h1 class="jumbotron--psm__headline">Precision Custom Sheet Metal Since 2000</h1>
+    <p><a class="btn btn-primary--psm btn-lg" href="mailto:psmfseattle@gmail.com?subject=Inquiry From Your Website" role="button">Contact Us Today</a></p>
   </div>
 </div>
 
-<div class="row">
-  <div class="col-md-4">
-    <h2>Services</h2>
-    <ul class="list-unstyled">
-      <li>Flashing</li>
-      <li>Saddles</li>
-      <li>Door Pans</li>
-      <li>Scuppers</li>
-      <li>Chimney Caps</li>
-      <li>Light Blocks</li>
-      <li>Radius Flashing</li>
-    </ul>
-  </div>
-  <div class="col-md-4">
-    <h2>Contact Us</h2>
-    <ul>
-      <li>Phone: 206 362-1195</li>
-      <li>Fax: 206 362-1578</li>
-      <li>Email: <a href="mailto:psmfseattle@gmail.com?subject=Inquiry From Your Website" target="_blank">psmfseattle@gmail.com</a></li>
-    </ul>
-  </div>
-  <div class="col-md-4">
-    <h2>Location</h2>
-    <div class="psm-map">MAP</div>
-  </div>
-</div>
-
-
+<div class="container">
+  <div class="row">
+    <div class="col-md-4">
+      <div class="callout services">
+        <h2 class="callout__title">Services</h2>
+        <ul class="list-unstyled">
+          <li>Flashing</li>
+          <li>Saddles</li>
+          <li>Door Pans</li>
+          <li>Scuppers</li>
+          <li>Chimney Caps</li>
+          <li>Light Blocks</li>
+          <li>Radius Flashing</li>
+        </ul>
       </div>
+    </div>
+    <div class="col-md-4">
+      <div class="callout contact">
+        <h2 class="callout__title">Contact Us</h2>
+        <ul class="list-unstyled">
+          <li><strong class="callout__label">Phone</strong>: 206 362-1195</li>
+          <li><strong class="callout__label">Fax</strong>: 206 362-1578</li>
+          <li><strong class="callout__label">Email</strong>: <a href="mailto:psmfseattle@gmail.com?subject=Inquiry From Your Website">psmfseattle@gmail.com</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="callout location">
+        <h2 class="callout__title">Location</h2>
+        <div class="psm-map">
+          <script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script><div style='overflow:hidden;height:234px;width:320px;'><div id='gmap_canvas' style='height:234px;width:320px;'></div><div><small><a href="http://embedgooglemaps.com">Embed your Google Map here!</a></small></div><div><small><a href="https://binaireoptieservaringen.nl/">Lees hier ervaringen van diverse binaire opties aanbieders</a></small></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div><script type='text/javascript'>function init_map(){var myOptions = {zoom:14,center:new google.maps.LatLng(47.70662249999999,-122.34441520000001),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(47.70662249999999,-122.34441520000001)});infowindow = new google.maps.InfoWindow({content:'<strong>Precision Sheet Metal</strong><br>10554 Aurora Ave N, Seattle, WA<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
     </section>
 
     <footer>
@@ -68,7 +88,7 @@
           <div class="col-md-12">
             <ul class="list-unstyled">
               <li><a href="http://maps.google.com/?q=10554 Aurora Ave N, Seattle, WA" target="_blank">10554 Aurora Ave N, Seattle, WA</a></li>
-              <li><a href="mailto:psmfseattle@gmail.com?subject=Inquiry From Your Website" target="_blank">psmfseattle@gmail.com</a></li>
+              <li><a href="mailto:psmfseattle@gmail.com?subject=Inquiry From Your Website">psmfseattle@gmail.com</a></li>
             </ul>
           </div>
         </div>
@@ -81,37 +101,49 @@
 </html>
 ;
 T:rawU;[I"F/Users/johncardwell/apps/precision-sheet-metal/content/index.html;
-TI"
-<div class="row">
-  <div class="col-md-12">
-    <h1>Precision Custom Sheet Metal Since 2000</h1>
+TI"}
+
+<div class="jumbotron jumbotron--psm">
+  <div class="container">
+    <h1 class="jumbotron--psm__headline">Precision Custom Sheet Metal Since 2000</h1>
+    <p><a class="btn btn-primary--psm btn-lg" href="mailto:psmfseattle@gmail.com?subject=Inquiry From Your Website" role="button">Contact Us Today</a></p>
   </div>
 </div>
 
-<div class="row">
-  <div class="col-md-4">
-    <h2>Services</h2>
-    <ul class="list-unstyled">
-      <li>Flashing</li>
-      <li>Saddles</li>
-      <li>Door Pans</li>
-      <li>Scuppers</li>
-      <li>Chimney Caps</li>
-      <li>Light Blocks</li>
-      <li>Radius Flashing</li>
-    </ul>
-  </div>
-  <div class="col-md-4">
-    <h2>Contact Us</h2>
-    <ul>
-      <li>Phone: 206 362-1195</li>
-      <li>Fax: 206 362-1578</li>
-      <li>Email: <a href="mailto:psmfseattle@gmail.com?subject=Inquiry From Your Website" target="_blank">psmfseattle@gmail.com</a></li>
-    </ul>
-  </div>
-  <div class="col-md-4">
-    <h2>Location</h2>
-    <div class="psm-map">MAP</div>
+<div class="container">
+  <div class="row">
+    <div class="col-md-4">
+      <div class="callout services">
+        <h2 class="callout__title">Services</h2>
+        <ul class="list-unstyled">
+          <li>Flashing</li>
+          <li>Saddles</li>
+          <li>Door Pans</li>
+          <li>Scuppers</li>
+          <li>Chimney Caps</li>
+          <li>Light Blocks</li>
+          <li>Radius Flashing</li>
+        </ul>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="callout contact">
+        <h2 class="callout__title">Contact Us</h2>
+        <ul class="list-unstyled">
+          <li><strong class="callout__label">Phone</strong>: 206 362-1195</li>
+          <li><strong class="callout__label">Fax</strong>: 206 362-1578</li>
+          <li><strong class="callout__label">Email</strong>: <a href="mailto:psmfseattle@gmail.com?subject=Inquiry From Your Website">psmfseattle@gmail.com</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="callout location">
+        <h2 class="callout__title">Location</h2>
+        <div class="psm-map">
+          <script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script><div style='overflow:hidden;height:234px;width:320px;'><div id='gmap_canvas' style='height:234px;width:320px;'></div><div><small><a href="http://embedgooglemaps.com">Embed your Google Map here!</a></small></div><div><small><a href="https://binaireoptieservaringen.nl/">Lees hier ervaringen van diverse binaire opties aanbieders</a></small></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div><script type='text/javascript'>function init_map(){var myOptions = {zoom:14,center:new google.maps.LatLng(47.70662249999999,-122.34441520000001),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(47.70662249999999,-122.34441520000001)});infowindow = new google.maps.InfoWindow({content:'<strong>Precision Sheet Metal</strong><br>10554 Aurora Ave N, Seattle, WA<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 
@@ -239,17 +271,69 @@ TI"pÙ/*!
 /*# sourceMappingURL=bootstrap.min.css.map */;
 T;@&;@&o;;;;	I"/styles/stylesheet.css;
 T{;{;U;[I"Q/Users/johncardwell/apps/precision-sheet-metal/content/styles/stylesheet.css;
-TI"ãbody {
-    background: #222;
+TI"Ð
+/* Base */
+
+body {
+    background: #201d1e;
+    font-family: 'Open Sans', sans-serif;
 }
 
 h1 {
     text-transform: uppercase;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 1em;
 }
 
+a {
+    color: #009cac;
+}
+    a:hover {
+        color: #103742;
+    }
+
+footer {
+    margin-top: 3em;
+}
+footer ul {
+    border-top: 1px solid #2c292a;
+    padding-top: 1em;
+}
 footer li {
     display: inline-block;
+    margin-right: 1em;
+    padding-right: 1em;
+    border-right: 1px solid #2c292a;
 }
+    footer li:last-child {
+        border-right: none;
+    }
+footer li a {
+    color: #4e4b4c;
+}
+    footer li a:hover {
+        color: #625e5f;
+    }
+
+/* Buttons */
+
+.btn,
+.btn--psm {
+    background-color: #009cac;
+    color: #f1eee8;
+    border: 1px solid transparent;
+    -webkit-border-radius:0;
+    -moz-border-radius:0;
+    border-radius:0;
+}
+    .btn:hover,
+    .btn--psm:hover {
+        background-color: #009cac;
+        color: #f1eee8;
+    }
+
+/* Nav Styles */
 
 .navbar-brand {
     padding: 0px;
@@ -268,13 +352,106 @@ footer li {
 }
 
 .navbar--psm .nav >li >a {
-    padding-top: 30px;
-    padding-bottom: 30px;
+    line-height: 20px;
+    padding: 10px;
+    margin: 20px;
 }
+    @media (min-width: 768px) {
+        .navbar--psm .nav >li >a {
+            margin: 40px 0;
+        }
+    }
+
+.navbar-inverse.navbar--psm .navbar-nav>li>a {
+    color: #201d1e;
+}
+    .navbar-inverse.navbar--psm .navbar-nav>li>a:hover {
+        color: #f1eee8;
+    }
+
 .nav-container .navbar-toggle {
     padding: 10px;
     margin: 25px 15px 25px 0;
-};
+}
+
+.navbar-toggle {
+    margin-top: 40px;
+}
+
+/* Jumbotronny Thing*/
+
+.jumbotron--psm {
+    background: url('../images/psm-working.jpg') no-repeat center transparent;
+    background-size: cover;
+}
+    @media screen and (min-width: 768px) {
+        .jumbotron--psm {
+            padding-top: 80px;
+            padding-bottom: 80px;
+        }
+    }
+
+.jumbotron .jumbotron--psm__headline {
+    line-height: .9em;
+    font-weight: 600;
+    color: #f1eee8;
+    letter-spacing: 1px;
+}
+
+/* Modules */
+
+.callout {
+    padding: 20px;
+    background-color: #dfdeca;
+    color: #f1eee8;
+    min-height: 320px;
+    margin-bottom: 15px;
+}
+    .services {
+        background: #eb522c;
+    }
+    .contact {
+        background: #eb522c;
+    }
+    .location {
+        background: #eb522c;
+    }
+
+.callout ul li {
+    padding: .4em 0;
+}
+
+.callout a {
+    color: #fff;
+    text-decoration: underline;
+}
+    .callout a:hover {
+        color: #dfdeca;
+    }
+
+.callout__title {
+    margin-top: 0;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.callout__label {
+    text-transform: uppercase;
+}
+
+/* google map */
+
+.gm-style-iw {
+    color: #000;
+}
+
+
+
+
+
+
+/* Utilities */
+;
 T;@.;@.o;;;;	I"/js/jquery-3.1.0.min.js;
 T{;{;U;[I"R/Users/johncardwell/apps/precision-sheet-metal/content/js/jquery-3.1.0.min.js;
 TI"OQ/*! jQuery v3.1.0 | (c) jQuery Foundation | jquery.org/license */

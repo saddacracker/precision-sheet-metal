@@ -13,18 +13,27 @@
     <nav class="navbar navbar-inverse navbar-static-top navbar--psm">
       <div class="container">
         <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#psmNavLinks">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
           <a class="navbar-brand" href="#"><img src="/images/psm-logo.gif" alt="Dispute Bills">
           </a>
+        </div>
+        <div id="psmNavLinks" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="nav-item">
+              <a class="btn btn-default navbar-btn" href="mailto:psmfseattle@gmail.com?subject=Inquiry From Your Website" target="_blank">Contact</a
+            </li>
+          </ul>
         </div>
       </div>
     </nav>
 
-    <img src="/images/psm-working.jpg" class="img-responsive" alt="Precision Sheet Metal Working">
-
-    <section>
-      <div id="main" class="container">
+    <section id="main">
         <%= yield %>
-      </div>
     </section>
 
     <footer>
@@ -33,7 +42,7 @@
           <div class="col-md-12">
             <ul class="list-unstyled">
               <li><a href="http://maps.google.com/?q=10554 Aurora Ave N, Seattle, WA" target="_blank">10554 Aurora Ave N, Seattle, WA</a></li>
-              <li><a href="mailto:psmfseattle@gmail.com?subject=Inquiry From Your Website" target="_blank">psmfseattle@gmail.com</a></li>
+              <li><a href="mailto:psmfseattle@gmail.com?subject=Inquiry From Your Website">psmfseattle@gmail.com</a></li>
             </ul>
           </div>
         </div>
