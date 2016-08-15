@@ -1,0 +1,97 @@
+Crashlog created at 2016-08-14 22:43:26 -0700
+
+===== MESSAGE:
+
+RuntimeError: Branch 'gh-pages' does not exist inside output. Please create one and try again.
+
+===== COMPILATION STACK:
+
+  (empty)
+
+===== STACK TRACE:
+
+  0. /Users/johncardwell/.rvm/gems/ruby-2.3.1/gems/nanoc-git-1.0.1/lib/nanoc/git/deployer.rb:52:in `rescue in block in run'
+  1. /Users/johncardwell/.rvm/gems/ruby-2.3.1/gems/nanoc-git-1.0.1/lib/nanoc/git/deployer.rb:49:in `block in run'
+  2. /Users/johncardwell/.rvm/gems/ruby-2.3.1/gems/nanoc-git-1.0.1/lib/nanoc/git/deployer.rb:30:in `chdir'
+  3. /Users/johncardwell/.rvm/gems/ruby-2.3.1/gems/nanoc-git-1.0.1/lib/nanoc/git/deployer.rb:30:in `run'
+  4. /Users/johncardwell/.rvm/gems/ruby-2.3.1/gems/nanoc-4.2.4/lib/nanoc/cli/commands/deploy.rb:55:in `deploy'
+  5. /Users/johncardwell/.rvm/gems/ruby-2.3.1/gems/nanoc-4.2.4/lib/nanoc/cli/commands/deploy.rb:23:in `run'
+  6. /Users/johncardwell/.rvm/gems/ruby-2.3.1/gems/nanoc-4.2.4/lib/nanoc/cli/command_runner.rb:12:in `block in call'
+  7. /Users/johncardwell/.rvm/gems/ruby-2.3.1/gems/nanoc-4.2.4/lib/nanoc/cli/error_handler.rb:64:in `handle_while'
+  8. /Users/johncardwell/.rvm/gems/ruby-2.3.1/gems/nanoc-4.2.4/lib/nanoc/cli/error_handler.rb:22:in `handle_while'
+  9. /Users/johncardwell/.rvm/gems/ruby-2.3.1/gems/nanoc-4.2.4/lib/nanoc/cli/command_runner.rb:11:in `call'
+  10. /Users/johncardwell/.rvm/gems/ruby-2.3.1/gems/cri-2.7.0/lib/cri/command_dsl.rb:233:in `block in runner'
+  11. /Users/johncardwell/.rvm/gems/ruby-2.3.1/gems/cri-2.7.0/lib/cri/command.rb:294:in `run_this'
+  12. /Users/johncardwell/.rvm/gems/ruby-2.3.1/gems/cri-2.7.0/lib/cri/command.rb:247:in `run'
+  13. /Users/johncardwell/.rvm/gems/ruby-2.3.1/gems/cri-2.7.0/lib/cri/command.rb:260:in `run'
+  14. /Users/johncardwell/.rvm/gems/ruby-2.3.1/gems/nanoc-4.2.4/lib/nanoc/cli.rb:46:in `block in run'
+  15. /Users/johncardwell/.rvm/gems/ruby-2.3.1/gems/nanoc-4.2.4/lib/nanoc/cli/error_handler.rb:64:in `handle_while'
+  16. /Users/johncardwell/.rvm/gems/ruby-2.3.1/gems/nanoc-4.2.4/lib/nanoc/cli/error_handler.rb:22:in `handle_while'
+  17. /Users/johncardwell/.rvm/gems/ruby-2.3.1/gems/nanoc-4.2.4/lib/nanoc/cli.rb:44:in `run'
+  18. /Users/johncardwell/.rvm/gems/ruby-2.3.1/gems/nanoc-4.2.4/bin/nanoc:9:in `<top (required)>'
+  19. /Users/johncardwell/.rvm/gems/ruby-2.3.1/bin/nanoc:23:in `load'
+  20. /Users/johncardwell/.rvm/gems/ruby-2.3.1/bin/nanoc:23:in `<main>'
+  21. /Users/johncardwell/.rvm/gems/ruby-2.3.1/bin/ruby_executable_hooks:15:in `eval'
+
+===== VERSION INFORMATION:
+
+Nanoc 4.2.4 © 2007-2016 Denis Defreyne.
+Running ruby 2.3.1 (2016-04-26) on x86_64-darwin14 with RubyGems 2.5.1.
+
+===== SYSTEM INFORMATION:
+
+Darwin 04012015-MBP.local 14.5.0 Darwin Kernel Version 14.5.0: Wed Jul 29 02:26:53 PDT 2015; root:xnu-2782.40.9~1/RELEASE_X86_64 x86_64
+
+===== INSTALLED GEMS:
+
+  adsf 1.2.1
+  bigdecimal 1.2.8
+  bundler 1.12.5
+  bundler-unload 1.0.2
+  colored 1.2
+  concurrent-ruby 1.0.2
+  cri 2.7.0
+  did_you_mean 1.0.0
+  executable-hooks 1.3.2
+  gem-wrappers 1.2.7
+  hamster 3.0.0
+  io-console 0.4.5
+  json 1.8.3
+  minitest 5.8.3
+  nanoc 4.2.4
+  nanoc-git 1.0.1
+  net-telnet 0.1.1
+  power_assert 0.2.6
+  psych 2.0.17
+  rack 2.0.1
+  rake 10.4.2
+  rdoc 4.2.1
+  ref 2.0.0
+  rubygems-bundler 1.4.4
+  rvm 1.11.3.9
+  test-unit 3.1.5
+
+===== LOAD PATHS:
+
+  0. /Users/johncardwell/.rvm/gems/ruby-2.3.1/gems/ref-2.0.0/lib
+  1. /Users/johncardwell/.rvm/gems/ruby-2.3.1@global/gems/did_you_mean-1.0.0/lib
+  2. /Users/johncardwell/.rvm/gems/ruby-2.3.1@global/gems/executable-hooks-1.3.2/lib
+  3. /Users/johncardwell/.rvm/gems/ruby-2.3.1@global/extensions/x86_64-darwin-14/2.3.0/executable-hooks-1.3.2
+  4. /Users/johncardwell/.rvm/gems/ruby-2.3.1@global/gems/bundler-unload-1.0.2/lib
+  5. /Users/johncardwell/.rvm/gems/ruby-2.3.1@global/gems/rubygems-bundler-1.4.4/lib
+  6. /Users/johncardwell/.rvm/gems/ruby-2.3.1/gems/bundler-1.12.5/lib
+  7. /Users/johncardwell/.rvm/gems/ruby-2.3.1/gems/colored-1.2/lib
+  8. /Users/johncardwell/.rvm/gems/ruby-2.3.1/gems/cri-2.7.0/lib
+  9. /Users/johncardwell/.rvm/gems/ruby-2.3.1/gems/concurrent-ruby-1.0.2/lib
+  10. /Users/johncardwell/.rvm/gems/ruby-2.3.1/gems/hamster-3.0.0/lib
+  11. /Users/johncardwell/.rvm/gems/ruby-2.3.1/gems/ref-2.0.0/lib
+  12. /Users/johncardwell/.rvm/gems/ruby-2.3.1/gems/nanoc-4.2.4/lib
+  13. /Users/johncardwell/.rvm/gems/ruby-2.3.1/gems/nanoc-git-1.0.1/lib
+  14. /Users/johncardwell/.rvm/rubies/ruby-2.3.1/lib/ruby/site_ruby/2.3.0
+  15. /Users/johncardwell/.rvm/rubies/ruby-2.3.1/lib/ruby/site_ruby/2.3.0/x86_64-darwin14
+  16. /Users/johncardwell/.rvm/rubies/ruby-2.3.1/lib/ruby/site_ruby
+  17. /Users/johncardwell/.rvm/rubies/ruby-2.3.1/lib/ruby/vendor_ruby/2.3.0
+  18. /Users/johncardwell/.rvm/rubies/ruby-2.3.1/lib/ruby/vendor_ruby/2.3.0/x86_64-darwin14
+  19. /Users/johncardwell/.rvm/rubies/ruby-2.3.1/lib/ruby/vendor_ruby
+  20. /Users/johncardwell/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0
+  21. /Users/johncardwell/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/x86_64-darwin14
