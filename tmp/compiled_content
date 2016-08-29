@@ -1,4 +1,4 @@
-{:	data{o:Nanoc::Identifier:
+{:	data{o:Nanoc::Identifier:
 @type:	full:@stringI"/index.html:ET{:default{	:	lastU:Nanoc::Int::TextualContent[0I"|<!DOCTYPE HTML>
 <html lang="en">
   <head>
@@ -476,4 +476,6 @@ To;;;;	I"/images/psm-working.jpg;
 T{;{;o;;I"R/Users/johncardwell/apps/precision-sheet-metal/content/images/psm-working.jpg;
 To;;;;	I" /images/images/psm-logo.png;
 T{;{;o;;I"V/Users/johncardwell/apps/precision-sheet-metal/content/images/images/psm-logo.png;
+To;;;;	I"/images/psm-logo.png;
+T{;{;o;;I"O/Users/johncardwell/apps/precision-sheet-metal/content/images/psm-logo.png;
 T:versioni
