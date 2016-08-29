@@ -1,4 +1,4 @@
-{:	data{[:item_repo:Nanoc::Identifier:
+{:	data{[:item_repo:Nanoc::Identifier:
 @type:	full:@stringI"/index.html:ET:default[[	:snapshot:rawT0[	;:preF0[	;;T0[:layoutI"/default.*;TI"!njH44IXmHxKt3g0D9qK+rBlirTE=;F[	;:	postT0[	;:	lastTI"/index.html;T[;o;;;	;
 I"/stylesheet.css;T;[[	;;T0[	;;F0[	;;TI"/stylesheet.css;T[;o;;;	;
 I"/default.html;T[[:filter:erbI"!s3jRyK92B9DrdMuJFubVGRDoPr8=;F[;o;;;	;
@@ -7,4 +7,5 @@ I"/styles/bootstrap.min.css;T;[[	;;T0[	;;F0[	;;TI"/styles/bootstrap.
 I"/styles/stylesheet.css;T;[[	;;T0[	;;F0[	;;TI"/styles/stylesheet.css;T[;o;;;	;
 I"/js/jquery-3.1.0.min.js;T;[[	;;T0[	;;F0[	;;TI"/js/jquery-3.1.0.min.js;T[;o;;;	;
 I"/images/psm-logo.gif;T;[[	;;T0[	;;F0[	;;TI"/images/psm-logo.gif;T[;o;;;	;
-I"/images/psm-working.jpg;T;[[	;;T0[	;;F0[	;;TI"/images/psm-working.jpg;T:versioni
+I"/images/psm-working.jpg;T;[[	;;T0[	;;F0[	;;TI"/images/psm-working.jpg;T[;o;;;	;
+I" /images/images/psm-logo.png;T;[[	;;T0[	;;F0[	;;T@T:versioni

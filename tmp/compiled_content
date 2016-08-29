@@ -1,4 +1,4 @@
-{:	data{o:Nanoc::Identifier:
+{:	data{o:Nanoc::Identifier:
 @type:	full:@stringI"/index.html:ET{:default{	:	lastU:Nanoc::Int::TextualContent[0I"|<!DOCTYPE HTML>
 <html lang="en">
   <head>
@@ -20,7 +20,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#"><img src="/images/psm-logo.gif" alt="Dispute Bills">
+          <a class="navbar-brand" href="#"><img src="/images/psm-logo.png" alt="Dispute Bills">
           </a>
         </div>
         <div id="psmNavLinks" class="navbar-collapse collapse">
@@ -474,4 +474,6 @@ T;@6;@6o;;;;	I"/images/psm-logo.gif;
 T{;{;o:Nanoc::Int::BinaryContent:@filenameI"O/Users/johncardwell/apps/precision-sheet-metal/content/images/psm-logo.gif;
 To;;;;	I"/images/psm-working.jpg;
 T{;{;o;;I"R/Users/johncardwell/apps/precision-sheet-metal/content/images/psm-working.jpg;
+To;;;;	I" /images/images/psm-logo.png;
+T{;{;o;;I"V/Users/johncardwell/apps/precision-sheet-metal/content/images/images/psm-logo.png;
 T:versioni
